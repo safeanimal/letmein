@@ -1,0 +1,57 @@
+<head>
+	<title>海南大学公共场所准入管理系统</title>
+	<link rel="stylesheet" type="text/css" href="static/css/style.css">
+	<!--引入谷歌字体库-->
+	<link rel='stylesheet' type='text/css'
+href='http://fonts.googleapis.com/css?family=Condiment'>
+	<!--引入Animate.css-->
+	<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  	<!--更新时间和日期-->
+  	<script>
+  		var t = null;
+  		t = setTimeout(time, 1000); //开始运行
+  		function time() {
+  		  clearTimeout(t); //清除定时器
+  		  dt = new Date();
+  		  var y = dt.getFullYear().toString().padStart(2, "0");
+  		  var mt = (dt.getMonth() + 1).toString().padStart(2, "0");
+  		  var day = dt.getDate().toString().padStart(2, "0");
+  		  var h = dt.getHours().toString().padStart(2, "0"); //获取时
+  		  var m = dt.getMinutes().toString().padStart(2, "0"); //获取分
+  		  var s = dt.getSeconds().toString().padStart(2, "0"); //获取秒
+  		  document.querySelector(".time").innerHTML = h + ":" + m + ":" + s;
+  		  document.querySelector(".date").innerHTML = y + "." + mt + "." + day;
+  		  t = setTimeout(time, 1000); //设定定时器，循环运行
+  		}
+	</script>
+
+</head>
+
+<div class="container">
+	
+	<div class="info">
+		<text class="name">桑国瑞</text>
+		<div class="info-detail">
+			<text class="id">20181619310063</text>
+			<text class="collage">计算机与网络空间安全学院</text>
+		</div>
+	</div>
+	
+	<div class="status">
+		<div class="icon">
+			<img class="img-icon animate__animated animate__flash animate__infinite" src="static/img/icon.png">
+		</div>
+		<div class="status-detail">
+			<text class="admission">允许出入</text>
+			<text class="gate">海甸校区（老）南门</text>
+		</div>
+	</div>
+
+	<div class="timer">
+		<text class="time"></text>
+		<text class="date"></text>
+	</div>
+</div>

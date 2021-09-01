@@ -1,0 +1,78 @@
+@font-face {
+	font-family: yuan;
+	src: url('font/HGY4_CNKI.TTF');
+}
+
+@font-face {
+	font-family: deng;
+	src: url('font/Deng.ttf');
+}
+
+body{
+	margin: 0;
+}
+
+.container{
+	padding-top: 10rem;
+	background-color: rgb(205, 255, 229);
+	height: 100%;
+	text-align: center;
+	font-family: yuan;
+}
+
+.info-detail{
+	margin-top: 4.5rem;
+	font-family: deng;
+	display: flex;
+	flex-flow: column;
+	font-size: 2.6rem;
+}
+
+.status{
+	margin-top: 8rem;
+}
+
+.img-icon{
+	width: 20rem;
+	height: 20rem;
+}
+
+.status-detail{
+	margin-top: 6rem;
+	display: flex;
+	flex-flow: column;
+}
+
+.admission{
+	font-size: 3.6rem;
+}
+
+.gate{
+	margin-top: 3rem;
+	font-size: 2.6rem;
+	color: dimgray;
+}
+
+.name{
+	font-size: 5rem;
+}
+
+.timer{
+	display: flex;
+	flex-flow: column;
+	margin-top: 22.5rem;
+}
+
+.time{
+	font-size: 5rem;
+}
+
+.date{
+	margin-top: 2rem;
+	font-size: 3.5rem;
+}
+
+.animate__animated.animate__flash {
+  --animate-duration: 2s;
+
+}
